@@ -12,6 +12,12 @@
           <input type="password" placeholder="Enter password" v-model="pass" />
           <button type="submit" class=" btn btn-success">Sign up</button>
     </form>
+
+    <form>
+      <input type="text" id="number" placeholder="+254...">
+      <div id="recaptcha-container"></div>
+      <button type="button" class="btn btn-success" @click="signWithPhone">Send code</button>
+    </form>
   </div>
 </template>
 
