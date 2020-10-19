@@ -38,6 +38,11 @@ export default {
       firebase.auth().signInWithPopup(this.googleAuthProvider)
         .then(res => console.log(res))
         .catch(err => alert(err.message));
+    },
+    signWithGithub() {
+      firebase.auth().signInWithPopup(this.githubAuthProvider)
+        .then(res => console.log(res))
+        .catch(err => alert(err.message));
     }
   }
 }
